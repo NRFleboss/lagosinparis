@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>WE ARE LAGOS IN PARIS – Édition Vinyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LAGOS IN PARIS est un collectif de producteurs et d'interprètes de musique d'Afrique de l'Ouest qui définit son son comme la nouvelle musique électronique « Afraw »." />
+  <meta name="keywords" content="vinyle, lagos, paris, musique, édition limitée" />
+  <meta property="og:title" content="WE ARE LAGOS IN PARIS – Édition Vinyle" />
+  <meta property="og:description" content="LAGOS IN PARIS est un collectif de producteurs et d'interprètes de musique d'Afrique de l'Ouest qui définit son son comme la nouvelle musique électronique « Afraw »." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="GATEFOLD.png" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="800" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WE ARE LAGOS IN PARIS – Édition Vinyle" />
+  <meta name="twitter:description" content="LAGOS IN PARIS est un collectif de producteurs et d'interprètes de musique d'Afrique de l'Ouest qui définit son son comme la nouvelle musique électronique « Afraw »." />
+  <meta name="twitter:image" content="GATEFOLD.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://sdks.shopifycdn.com" crossorigin />
+  <link rel="preconnect" href="https://miniwax.club" crossorigin />
+  <link rel="dns-prefetch" href="https://sdks.shopifycdn.com" />
+  <link rel="dns-prefetch" href="https://miniwax.club" />
+  <style>
+    /* --- POLICE PERSONNALISÉE --- */
+    @font-face {
+      font-family: 'HeadingNow';
+      src: url('HeadingNowTrial-47Extrabold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'HeadingNow';
+      src: url('HeadingNowTrial-61Thin.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* --- RESET & BASE --- */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'HeadingNow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Skip link pour l'accessibilité */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #fff;
+      color: #000;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 10000;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* --- SÉLECTEUR DE LANGUE --- */
+    .lang-selector {
+      position: fixed;
+      top: 30px;
+      right: 40px;
+      z-index: 1000;
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .lang-selector button {
+      background: none;
+      border: none;
+      color: #999;
+      cursor: pointer;
+      padding: 4px 0;
+      font-family: 'HeadingNow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300; /* Utilise HeadingNowTrial-52Light */
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      position: relative;
+      outline: none;
+    }
+
+    .lang-selector button:hover {
+      color: #fff;
+    }
+
+    .lang-selector button:focus-visible {
+      color: #fff;
+      outline: 1px solid rgba(255, 255, 255, 0.5);
+      outline-offset: 4px;
+    }
+
+    .lang-selector button.active {
+      color: #fff;
+    }
+
+    .lang-selector button.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* --- LAYOUT PRINCIPAL --- */
+    .main-wrapper {
+      display: grid;
+      grid-template-columns: 60% 40%; /* 60% Visuel / 40% Infos */
+      min-height: 100vh;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+
+    /* --- COLONNE GAUCHE : VISUELS --- */
+    .gallery-section {
+      padding: 48px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      will-change: scroll-position;
+    }
+
+    /* Animation d'apparition au scroll */
+    .gallery-section > div {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .gallery-section > div:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .gallery-section > div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .gallery-section > div:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .gallery-section > div:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 1. FACE A / FACE B - En premier */
+    .vinyl-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 19px;
+      width: 70%;
+      margin: 0 auto 8px auto;
+    }
+
+    .vinyl-row > div {
+      position: relative;
+    }
+
+    .vinyl-row img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+      border-radius: 2px;
+      will-change: transform;
+    }
+    
+    /* Effet de survol amélioré sur les disques */
+    .vinyl-row img:hover {
+      transform: scale(1.03);
+    }
+
+    .vinyl-row img:active {
+      transform: scale(1.01);
+    }
+
+    /* 2. GATEFOLD - En deuxième */
+    .gatefold-container {
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .gatefold-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+      border-radius: 2px;
+      will-change: transform;
+    }
+
+    .gatefold-container img:hover {
+      transform: scale(1.01);
+    }
+
+    /* 3. VIDEO CONTAINER - En dernier */
+    .video-container {
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 8px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      background-color: #000000;
+      border-radius: 2px;
+      transition: opacity 0.3s ease;
+    }
+
+    video:hover {
+      opacity: 0.95;
+    }
+
+    /* Indicateur de chargement pour les images lazy */
+    img[loading="lazy"] {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    img[loading="lazy"].loaded {
+      opacity: 1;
+    }
+
+    .vinyl-row img:focus-visible,
+    .gatefold-container img:focus-visible,
+    video:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.5);
+      outline-offset: 4px;
+    }
+
+    /* Légendes techniques (petits textes sous les images) */
+    .caption {
+      margin-top: 12px;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #666;
+      text-align: left;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    /* Amélioration visuelle au survol des conteneurs */
+    .vinyl-row > div:hover .caption,
+    .gatefold-container:hover .caption,
+    .video-container:hover .caption {
+      color: #888;
+    }
+
+    /* --- COLONNE DROITE : INFOS (STICKY) --- */
+    .info-section {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+      /* Bordure subtile à gauche */
+      border-left: 1px solid rgba(255,255,255,0.08); 
+    }
+
+    .product-details {
+      max-width: 380px;
+    }
+
+    /* Police Light pour les descriptions */
+    .info-section p,
+    .product-details p {
+      font-family: 'HeadingNow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300; /* Utilise HeadingNowTrial-52Light */
+    }
+
+    h1 {
+      font-family: 'HeadingNow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: clamp(28px, 3vw, 64px);
+      line-height: 1;
+      font-weight: 700; /* Utilise HeadingNowTrial-47Extrabold */
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      will-change: transform;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Espacement uniforme pour le bouton */
+    .shopify-embed-container {
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-family: 'HeadingNow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      color: #f5f5f5;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      display: block;
+      font-weight: 300; /* Utilise HeadingNowTrial-61Thin */
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Police de fallback pour les chiffres */
+    .subtitle .numbers {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+    }
+
+    .subtitle .separator {
+      margin: 0 0.6em;
+    }
+
+    .subtitle .price {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      margin-left: 0.5em;
+    }
+
+    .description {
+      color: #e0e0e0;
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.75;
+      max-width: 320px;
+    }
+
+    body[data-lang="fr"] .desc-fr { display: block; }
+    body[data-lang="fr"] .desc-en { display: none; }
+    body[data-lang="en"] .desc-fr { display: none; }
+    body[data-lang="en"] .desc-en { display: block; }
+
+    /* Cacher le conteneur des boutons pendant le chargement */
+    .shopify-embed-container {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    body.shopify-loaded .shopify-embed-container {
+      opacity: 1;
+    }
+    
+    /* Afficher uniquement le bon bouton selon la langue */
+    body.shopify-loaded[data-lang="fr"] #product-component-fr { 
+      display: block;
+    }
+    body.shopify-loaded[data-lang="fr"] #product-component-en { 
+      display: none;
+    }
+    body.shopify-loaded[data-lang="en"] #product-component-fr { 
+      display: none;
+    }
+    body.shopify-loaded[data-lang="en"] #product-component-en { 
+      display: block;
+    }
+
+    /* Bottom CTA - visible sur mobile uniquement */
+    .bottom-cta {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    body.shopify-loaded .bottom-cta {
+      opacity: 1;
+    }
+
+    body.shopify-loaded[data-lang="fr"] #product-component-bottom-fr { 
+      display: block;
+    }
+    body.shopify-loaded[data-lang="fr"] #product-component-bottom-en { 
+      display: none;
+    }
+    body.shopify-loaded[data-lang="en"] #product-component-bottom-fr { 
+      display: none;
+    }
+    body.shopify-loaded[data-lang="en"] #product-component-bottom-en { 
+      display: block;
+    }
+
+    /* --- RESPONSIVE MOBILE --- */
+    @media (max-width: 900px) {
+      .main-wrapper { 
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+      }
+
+      .lang-selector {
+        top: 15px;
+        right: 15px;
+        font-size: 11px;
+        gap: 10px;
+      }
+
+      .info-section {
+        position: relative;
+        height: auto;
+        padding: 30px 20px 30px 20px;
+        border: none;
+        order: -1; /* Afficher les infos en premier sur mobile */
+      }
+
+      .product-details {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h1 { 
+        font-size: clamp(28px, 8vw, 42px);
+        margin-bottom: 20px;
+        order: 2;
+      }
+
+      .subtitle {
+        font-size: 11px;
+        margin-bottom: 15px;
+        order: 1;
+      }
+
+      /* Bouton juste après le titre sur mobile */
+      .shopify-embed-container {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 25px;
+        order: 3; /* Bouton après le titre */
+      }
+
+      .info-section p {
+        font-size: 14px;
+        margin-bottom: 25px;
+        max-width: 100%;
+        order: 4; /* Description après le bouton */
+      }
+
+      .gallery-section {
+        padding: 20px 15px 40px 15px;
+        gap: 20px;
+        order: 1; /* Galerie après les infos */
+      }
+
+      .vinyl-row {
+        gap: 12px;
+        width: 100%;
+        margin: 0 auto 8px auto;
+      }
+
+      .gatefold-container,
+      .video-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .caption {
+        margin-top: 8px;
+        font-size: 8px;
+      }
+
+      /* Bottom CTA sur mobile */
+      .bottom-cta {
+        display: block;
+        width: 100%;
+        padding: 30px 15px 40px 15px;
+        text-align: center;
+      }
+    }
+
+    /* Breakpoint pour très petits écrans */
+    @media (max-width: 480px) {
+      .lang-selector {
+        top: 12px;
+        right: 12px;
+        font-size: 10px;
+      }
+
+      .info-section {
+        padding: 25px 15px 30px 15px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .gallery-section {
+        padding: 15px 12px 30px 12px;
+        gap: 15px;
+      }
+
+      .vinyl-row {
+        gap: 10px;
+      }
+
+      .caption {
+        font-size: 7px;
+        margin-top: 6px;
+      }
+    }
+
+    /* Réduction de mouvement pour les utilisateurs qui le préfèrent */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .gallery-section > div {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Amélioration pour les grands écrans */
+    @media (min-width: 1400px) {
+      .gallery-section {
+        padding: 80px 60px;
+      }
+
+      .info-section {
+        padding: 80px;
+      }
+    }
+
+    /* Amélioration du contraste pour l'accessibilité */
+    @media (prefers-contrast: high) {
+      .caption {
+        color: #aaa;
+      }
+
+      .subtitle {
+        color: #ccc;
+      }
+
+      .info-section p {
+        color: #ccc;
+      }
+    }
+
+    /* Amélioration pour le mode sombre système */
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #000000;
+      }
+    }
+  </style>
+</head>
+<body data-lang="fr">
+
+  <!-- Skip link pour l'accessibilité -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Sélecteur de langue -->
+  <div class="lang-selector" role="group" aria-label="Sélection de la langue">
+    <button id="lang-fr" class="active" aria-label="Français" aria-pressed="true">FR</button>
+    <button id="lang-en" aria-label="English" aria-pressed="false">EN</button>
+  </div>
+
+  <div class="main-wrapper" id="main-content">
+    
+    <div class="gallery-section" role="region" aria-label="Galerie du vinyle">
+      
+      <!-- 1. Face A / Face B - En premier -->
+      <div class="vinyl-row">
+        <div>
+          <img src="FACEA.png" alt="Face A du vinyle - WE ARE LAGOS IN PARIS" loading="eager" width="800" height="800" fetchpriority="high">
+        </div>
+        <div>
+          <img src="FACEB.png" alt="Face B du vinyle - WE ARE LAGOS IN PARIS" loading="eager" width="800" height="800" fetchpriority="high">
+        </div>
+      </div>
+
+      <!-- 2. Gatefold - En deuxième -->
+      <div class="gatefold-container">
+        <img src="GATEFOLD.png" alt="Gatefold artwork du vinyle - WE ARE LAGOS IN PARIS" loading="lazy" width="1600" height="800">
+      </div>
+
+      <!-- 3. Vidéo - En dernier -->
+      <div class="video-container">
+        <video src="Animation_Vinyl.mp4" autoplay loop muted playsinline preload="none" aria-label="Animation du packaging du vinyle - WE ARE LAGOS IN PARIS" poster="">
+          <p>Votre navigateur ne supporte pas la vidéo HTML5.</p>
+        </video>
+      </div>
+
+      <!-- 4. Bouton d'achat en bas (mobile) -->
+      <div class="bottom-cta">
+        <div id="product-component-bottom-fr"></div>
+        <div id="product-component-bottom-en"></div>
+      </div>
+
+    </div>
+
+    <aside class="info-section" role="complementary" aria-label="Informations du produit">
+      <div class="product-details">
+        <span class="subtitle"><span class="numbers">500</span> VINYLS LIMITED EDITION<span class="separator">/</span><span class="price">20€</span></span>
+        <h1>WE ARE<br>LAGOS IN PARIS</h1>
+        
+        <div class="shopify-embed-container">
+          <div id="product-component-fr"></div>
+          <div id="product-component-en"></div>
+        </div>
+
+        <p class="description desc-fr">
+          LAGOS IN PARIS est un collectif de producteurs et d'interprètes de musique d'Afrique de l'Ouest qui définit son son comme la nouvelle musique électronique « Afraw ». Sans studio fixe, ils enregistrent dans divers endroits, au gré des gens et des artistes qu'ils rencontrent, créant une musique aussi brute et sauvage que sophistiquée. Leur approche DIY reflète leur esprit nomade, où chaque enregistrement, performance et collaborations ajoutent à leur voyage en constante évolution.
+        </p>
+        <p class="description desc-en">
+          LAGOS IN PARIS is a collective of producers and performers from West Africa who define their sound as the new electronic music "Afraw." Without a fixed studio, they record in various locations, following the people and artists they meet along the way, creating music that is as raw and wild as it is sophisticated. Their DIY approach reflects their nomadic spirit, where each recording, performance, and collaboration adds to their ever-evolving journey.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Structured Data pour SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "WE ARE LAGOS IN PARIS - Vinyl Edition",
+    "description": "LAGOS IN PARIS est un collectif de producteurs et d'interprètes de musique d'Afrique de l'Ouest qui définit son son comme la nouvelle musique électronique « Afraw ». Sans studio fixe, ils enregistrent dans divers endroits, au gré des gens et des artistes qu'ils rencontrent, créant une musique aussi brute et sauvage que sophistiquée.",
+    "image": ["FACEA.png", "FACEB.png", "GATEFOLD.png"],
+    "brand": {
+      "@type": "Brand",
+      "name": "Lagos in Paris"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "EUR",
+      "price": "20"
+    }
+  }
+  </script>
+
+  <!-- Système de traduction -->
+  <script type="text/javascript">
+  const LANGS = {
+    fr: {
+      pageTitle: 'WE ARE LAGOS IN PARIS – Édition Vinyle',
+      metaDescription: 'LAGOS IN PARIS est un collectif de producteurs et d\'interprètes de musique d\'Afrique de l\'Ouest qui définit son son comme la nouvelle musique électronique « Afraw ».',
+      button: 'Commander le vinyle'
+    },
+    en: {
+      pageTitle: 'WE ARE LAGOS IN PARIS – Vinyl Edition',
+      metaDescription: 'LAGOS IN PARIS is a collective of producers and performers from West Africa who define their sound as the new electronic music "Afraw."',
+      button: 'Order vinyl'
+    }
+  };
+
+  function getCurrentLang() {
+    return localStorage.getItem('lang') || 'fr';
+  }
+
+  function setLang(lang) {
+    const fallback = LANGS[lang] ? lang : 'fr';
+    localStorage.setItem('lang', fallback);
+    document.documentElement.lang = fallback;
+    document.body.setAttribute('data-lang', fallback);
+    updateMeta(fallback);
+    updateLangSelector(fallback);
+    updateShopifyButton(fallback);
+  }
+
+  function updateMeta(lang) {
+    document.title = LANGS[lang].pageTitle;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', LANGS[lang].metaDescription);
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', LANGS[lang].pageTitle);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', LANGS[lang].metaDescription);
+
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute('content', LANGS[lang].pageTitle);
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) twitterDesc.setAttribute('content', LANGS[lang].metaDescription);
+  }
+
+  function updateLangSelector(lang) {
+    const frButton = document.getElementById('lang-fr');
+    const enButton = document.getElementById('lang-en');
+
+    frButton.classList.toggle('active', lang === 'fr');
+    enButton.classList.toggle('active', lang === 'en');
+
+    frButton.setAttribute('aria-pressed', lang === 'fr' ? 'true' : 'false');
+    enButton.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  }
+
+  function updateShopifyButton(lang) {
+    // Les boutons sont affichés/cachés via CSS, pas besoin de mise à jour dynamique
+  }
+  
+  function loadImages() {
+    const images = document.querySelectorAll('img');
+
+    images.forEach(img => {
+      if (img.complete && img.naturalHeight !== 0) {
+        img.classList.add('loaded');
+      } else {
+        img.addEventListener('load', function() {
+          this.classList.add('loaded');
+        });
+        img.addEventListener('error', function() {
+          console.warn('Erreur de chargement de l\'image:', this.src);
+          this.classList.add('loaded');
+        });
+      }
+    });
+  }
+
+  // Détection de la connexion lente
+  if ('connection' in navigator) {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (connection && (connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g')) {
+      // Désactiver l'autoplay de la vidéo sur connexion lente
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('video');
+        if (video) {
+          video.removeAttribute('autoplay');
+        }
+      });
+    }
+  }
+
+  // Fonction pour gérer le bouton sticky sur mobile
+  function handleMobileButton() {
+    if (window.innerWidth <= 900) {
+      const buttonContainer = document.querySelector('.shopify-embed-container');
+      const infoSection = document.querySelector('.info-section');
+      
+      if (buttonContainer && infoSection) {
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function() {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const infoSectionBottom = infoSection.offsetTop + infoSection.offsetHeight;
+          
+          // Rendre le bouton sticky après avoir scrollé au-delà de la section info
+          if (scrollTop > infoSectionBottom - 100) {
+            buttonContainer.classList.add('sticky');
+          } else {
+            buttonContainer.classList.remove('sticky');
+          }
+          
+          lastScrollTop = scrollTop;
+        }, { passive: true });
+      }
+    }
+  }
+
+  // Initialisation au chargement
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentLang = getCurrentLang();
+    setLang(currentLang);
+
+    // Event listeners pour les boutons de langue
+    document.getElementById('lang-fr').addEventListener('click', () => setLang('fr'));
+    document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
+    
+    // Support du clavier pour les boutons de langue
+    document.getElementById('lang-fr').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setLang('fr');
+      }
+    });
+    document.getElementById('lang-en').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setLang('en');
+      }
+    });
+
+    // Charger les images
+    loadImages();
+    
+    // Gérer le bouton mobile
+    handleMobileButton();
+    
+    // Réinitialiser au redimensionnement
+    window.addEventListener('resize', handleMobileButton);
+  });
+  </script>
+
+  <script type="text/javascript">
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+      } else {
+        loadScript();
+      }
+    } else {
+      loadScript();
+    }
+    function loadScript() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = scriptURL;
+      script.onerror = function() {
+        console.error('Erreur lors du chargement du script Shopify');
+      };
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      script.onload = ShopifyBuyInit;
+    }
+    function ShopifyBuyInit() {
+      var client = ShopifyBuy.buildClient({
+        domain: 'miniwax.club',
+        storefrontAccessToken: '31682f9bb9f4efdfdcfd96fb08af4c27',
+      });
+      
+      var buttonStyles = {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "700",
+        "font-size": "14px",
+        "padding": "18px 40px",
+        "background-color": "#ffffff",
+        "color": "#000000",
+        "border-radius": "0px",
+        "letter-spacing": "0.1em",
+        "text-transform": "uppercase",
+        "border": "1px solid #ffffff",
+        "width": "100%",
+        "transition": "all 0.3s ease",
+        ":hover": {
+          "background-color": "#000000",
+          "color": "#ffffff",
+          "border-color": "#ffffff"
+        },
+        ":focus": { "background-color": "#ffffff" }
+      };
+      
+      var cartStyles = {
+        "button": {
+          "background-color": "#ffffff",
+          "color": "#000000",
+          "border-radius": "0px",
+          ":hover": {
+            "background-color": "#e0e0e0",
+            "color": "#000000"
+          }
+        },
+        "cart": { "background-color": "#0a0a0a" },
+        "header": { "background-color": "#0a0a0a" },
+        "footer": { "background-color": "#0a0a0a" },
+        "title": { "color": "#ffffff" },
+        "close": { "color": "#ffffff", ":hover": { "color": "#cccccc" } },
+        "subtotalText": { "color": "#ffffff" },
+        "subtotal": { "color": "#ffffff" },
+        "notice": { "color": "#cccccc" },
+        "currency": { "color": "#ffffff" },
+        "empty": { "color": "#cccccc" },
+        "noteDescription": { "color": "#cccccc" },
+        "discountText": { "color": "#cccccc" },
+        "discountAmount": { "color": "#ffffff" }
+      };
+      
+      var lineItemStyles = {
+        "lineItem": { "background-color": "#0a0a0a" },
+        "variantTitle": { "color": "#888888" },
+        "title": { "color": "#ffffff" },
+        "price": { "color": "#ffffff" },
+        "quantity": { "color": "#ffffff", "background-color": "#1a1a1a", "border-color": "#333333" },
+        "quantityDecrement": { "color": "#ffffff", "border-color": "#333333" },
+        "quantityIncrement": { "color": "#ffffff", "border-color": "#333333" },
+        "quantityInput": { "color": "#ffffff", "background-color": "#1a1a1a" },
+        "itemRemove": { "color": "#999999" }
+      };
+      
+      var lineItemContents = {
+        "image": true
+      };
+      
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        // Bouton FR
+        ui.createComponent('product', {
+          id: '15535335571781',
+          node: document.getElementById('product-component-fr'),
+          moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+          options: {
+            "product": {
+              "styles": {
+                "product": {
+                  "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0", "margin-bottom": "0px" },
+                  "text-align": "left"
+                },
+                "title": { "display": "none" },
+                "price": { "display": "none" },
+                "compareAt": { "display": "none" },
+                "unitPrice": { "display": "none" },
+                "button": buttonStyles
+              },
+              "contents": { "img": false, "title": false, "price": false, "options": false },
+              "text": { "button": "COMMANDER LE VINYLE" }
+            },
+            "cart": {
+              "styles": cartStyles,
+              "text": { "title": "Panier", "empty": "Votre panier est vide", "button": "Paiement", "notice": "" }
+            },
+            "lineItem": { "styles": lineItemStyles, "contents": lineItemContents },
+            "toggle": { "styles": { "toggle": { "background-color": "#ffffff" }, "count": { "color": "#000000" }, "iconPath": { "fill": "#000000" } } }
+          }
+        });
+        
+        // Bouton EN
+        ui.createComponent('product', {
+          id: '15535335571781',
+          node: document.getElementById('product-component-en'),
+          moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+          options: {
+            "product": {
+              "styles": {
+                "product": {
+                  "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0", "margin-bottom": "0px" },
+                  "text-align": "left"
+                },
+                "title": { "display": "none" },
+                "price": { "display": "none" },
+                "compareAt": { "display": "none" },
+                "unitPrice": { "display": "none" },
+                "button": buttonStyles
+              },
+              "contents": { "img": false, "title": false, "price": false, "options": false },
+              "text": { "button": "ORDER VINYL" }
+            },
+            "cart": {
+              "styles": cartStyles,
+              "text": { "title": "Cart", "empty": "Your cart is empty", "button": "Checkout", "notice": "" }
+            },
+            "lineItem": { "styles": lineItemStyles, "contents": lineItemContents },
+            "toggle": { "styles": { "toggle": { "background-color": "#ffffff" }, "count": { "color": "#000000" }, "iconPath": { "fill": "#000000" } } }
+          }
+        });
+        
+        // Bouton bottom FR (mobile)
+        ui.createComponent('product', {
+          id: '15535335571781',
+          node: document.getElementById('product-component-bottom-fr'),
+          moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+          options: {
+            "product": {
+              "styles": {
+                "product": { "text-align": "center" },
+                "title": { "display": "none" },
+                "price": { "display": "none" },
+                "compareAt": { "display": "none" },
+                "unitPrice": { "display": "none" },
+                "button": buttonStyles
+              },
+              "contents": { "img": false, "title": false, "price": false, "options": false },
+              "text": { "button": "COMMANDER LE VINYLE" }
+            },
+            "cart": {
+              "styles": cartStyles,
+              "text": { "title": "Panier", "empty": "Votre panier est vide", "button": "Paiement", "notice": "" }
+            },
+            "lineItem": { "styles": lineItemStyles, "contents": lineItemContents },
+            "toggle": { "styles": { "toggle": { "background-color": "#ffffff" }, "count": { "color": "#000000" }, "iconPath": { "fill": "#000000" } } }
+          }
+        });
+        
+        // Bouton bottom EN (mobile)
+        ui.createComponent('product', {
+          id: '15535335571781',
+          node: document.getElementById('product-component-bottom-en'),
+          moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20%E2%82%AC',
+          options: {
+            "product": {
+              "styles": {
+                "product": { "text-align": "center" },
+                "title": { "display": "none" },
+                "price": { "display": "none" },
+                "compareAt": { "display": "none" },
+                "unitPrice": { "display": "none" },
+                "button": buttonStyles
+              },
+              "contents": { "img": false, "title": false, "price": false, "options": false },
+              "text": { "button": "ORDER VINYL" }
+            },
+            "cart": {
+              "styles": cartStyles,
+              "text": { "title": "Cart", "empty": "Your cart is empty", "button": "Checkout", "notice": "" }
+            },
+            "lineItem": { "styles": lineItemStyles, "contents": lineItemContents },
+            "toggle": { "styles": { "toggle": { "background-color": "#ffffff" }, "count": { "color": "#000000" }, "iconPath": { "fill": "#000000" } } }
+          }
+        });
+        
+        // Attendre que les boutons soient chargés avant d'appliquer le CSS de masquage
+        setTimeout(function() {
+          document.body.classList.add('shopify-loaded');
+        }, 1500);
+      });
+    }
+  })();
+  
+  // Écouter les changements de langue pour mettre à jour le bouton
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'lang') {
+      updateShopifyButton(e.newValue);
+    }
+  });
+  </script>
+</body>
+</html>
